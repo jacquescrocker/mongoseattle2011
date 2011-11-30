@@ -33,7 +33,7 @@
 # Per-page layout changes:
 #
 # With no layout
-page "/", :layout => false
+# page "*", :layout => false
 
 #
 # With alternative layout
@@ -59,9 +59,9 @@ helpers do
     "Helping"
   end
 
-  def slides
+  def slides(folder = "slides")
     results = []
-    Dir["./source/slides/_*.html.*"].each do |slide_path|
+    Dir["./source/#{folder}/_*.html.*"].each do |slide_path|
       slide_path = slide_path.gsub("./source/", "").gsub("/_", "/").gsub(/$_/, "")
       results << slide_path
     end
