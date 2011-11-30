@@ -7,4 +7,4 @@ Deploy with:
     rake github:deploy
     
 
-## See it here: [http://railsjedi.github.com/mongoseattle](http://railsjedi.github.com/mongoseattle)
+## See it here: [http://railsjedi.github.com/mongoseattle2011](http://railsjedi.github.com/mongoseattle2011)
