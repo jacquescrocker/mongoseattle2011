@@ -1,6 +1,9 @@
 @import "compass"
 @import "buttons"
 
+.clear
+  clear: both
+
 header.caption
   position: relative
   .button.primary
@@ -19,8 +22,8 @@ header.caption
   // updating lists
   ol, ul
     margin-top: -40px
-  
-  &.shout 
+
+  &.shout
     h2
       font-size: 80px
       line-height: 1.5
@@ -28,7 +31,7 @@ header.caption
       margin: 0 auto
       left: 0
       right: 0
-  
+
 
 #Cover
   h2
@@ -47,7 +50,6 @@ header.caption
     text-shadow: 0px 0px 3px #000
 
 
-
 #Intro3
   section
     text-align: center
@@ -62,6 +64,119 @@ header.caption
   h3
     font-size: 40px
 
+// About Me
+#About1
+  .about
+    margin-top: -30px
+    margin-bottom: 00px
+    .me
+      float: left
+      background-image: url(../pictures/me.jpg)
+      background-repeat: no-repeat
+      width: 231px
+      height: 231px
+      margin-right: 30px
+    h3
+      margin-bottom: -10px
+    h4
+      margin-top: -10px
+
+  .social-panels
+    height: 100px
+    position: relative
+    clear: both
+    margin-top: 20px
+
+    .social-panel
+      width: 33%
+      height: 100px
+      position: absolute
+      text-align: center
+      font-size: 20px
+
+      .logo
+        display: inline-block
+        background-repeat: no-repeat
+
+      &.twitter
+        left: 0
+        .logo
+          background-image: url(../pictures/logos/twitter.jpg)
+          width: 145px
+          height: 49px
+
+      &.github
+        left: 33%
+        .logo
+          background-image: url(../pictures/logos/github.jpg)
+          width: 145px
+          height: 49px
+
+      &.angellist
+        right: 0
+        .logo
+          background-image: url(../pictures/logos/angellist.jpg)
+          width: 145px
+          height: 49px
+
+// About my current startup
+#About2
+  .about
+    margin: 0 auto
+    width: 700px
+    .logo
+      float: left
+      background-image: url(../pictures/logos/seconds.png)
+      background-repeat: no-repeat
+      width: 257px
+      height: 68px
+      margin-top: 20px
+    h3
+      margin-left: 300px
+      line-height: 1.2
+      font-weight: normal
+    .url
+      width: 257px
+      text-align: center
+      margin-top: -5px
+  .info
+    width: 40%
+    margin-top: 40px
+    &.col1
+      float: left
+      margin-left: 10%
+      padding-top: 10px
+    &.col2
+      float: right
+      margin-right: 10%
+
+  h4
+    line-height: 1.2
+    label
+      font-style: italic
+    strong
+      color: green
+
+  .tech
+    text-align: left
+    margin-top: 30px
+    margin-left: 80px
+    h4
+      line-height: 1.2
+
+#About3, #About4
+  &.slide
+    li
+      line-height: 1.2
+    ul ul > li::before
+      content: ''
+    ul ul
+      margin-left: 0
+    ul ul
+      padding-bottom: 15px
+
+
+// Cloud FTW
 #Deploy2
   h2
     color: #FFF
