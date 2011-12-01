@@ -342,8 +342,7 @@ BODY {
     .full .slide.bg {
       z-index:1;
       }
-      .full .slide.bg:after,
-      .full .slide.shout:after {
+      .full .slide.bg:after{
         content:'';
         }
 
